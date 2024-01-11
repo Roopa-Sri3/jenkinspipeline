@@ -12,7 +12,7 @@ pipeline{
       script{
         sh """
         dotnet restore
-        dotnet publish method2Postgresql.sln -c Release -o out
+        msbuild methos2Postgresql.sln
         dotnet build
         """
       
