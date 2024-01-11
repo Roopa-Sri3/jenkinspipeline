@@ -12,7 +12,7 @@ pipeline{
       script{
         sh """
         dotnet restore
-        msbuild methos2Postgresql.sln
+        msbuild method2Postgresql.sln
         dotnet build
         """
       
